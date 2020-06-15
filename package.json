@@ -1,48 +1,55 @@
 {
-  "name": "leaflet-measure",
-  "version": "3.1.0",
-  "description": "Coordinate, linear, and area measure tool for Leaflet maps",
-  "main": "dist/leaflet-measure.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ljagis/leaflet-measure.git"
-  },
-  "keywords": [
-    "leaflet",
-    "measure",
-    "measurement",
-    "control",
-    "coordinate",
-    "line",
-    "length",
-    "area",
-    "polygon",
-    "path"
-  ],
-  "author": "LJA Engineering, Inc - GIS <gisdev@ljaengineering.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint --ext js src/",
-    "build": "webpack --config webpack.prod.js -p",
-    "start:dev": "webpack-dev-server --open --config webpack.dev.js",
-    "precommit": "lint-staged",
-    "prepublishOnly": "yarn build",
-    "ghpages": "yarn build && gh-pages -d dist"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint"
-    ],
-    "*.{js,scss}": [
-      "prettier --write",
-      "git add"
+  "_args": [
+    [
+      "leaflet-measure",
+      "/home/ivan/work/skif2/skif2_front"
     ]
+  ],
+  "_from": "leaflet-measure@latest",
+  "_id": "leaflet-measure@3.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/leaflet-measure",
+  "_nodeVersion": "9.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/leaflet-measure_3.1.0_1523230841164_0.006778310431784229"
+  },
+  "_npmUser": {
+    "email": "br@ndoncopeland.com",
+    "name": "brandoncopeland"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "leaflet-measure",
+    "raw": "leaflet-measure",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet-measure/-/leaflet-measure-3.1.0.tgz",
+  "_shasum": "97777c206a1f8e1ee5a260ffb4128db18fce9cd0",
+  "_shrinkwrap": null,
+  "_spec": "leaflet-measure",
+  "_where": "/home/ivan/work/skif2/skif2_front",
+  "author": {
+    "email": "gisdev@ljaengineering.com",
+    "name": "LJA Engineering, Inc - GIS"
+  },
+  "bugs": {
+    "url": "https://github.com/ljagis/leaflet-measure/issues"
   },
   "dependencies": {
     "@turf/area": "^5.1.5",
     "@turf/length": "^5.1.5",
     "lodash": "^4.17.5"
   },
+  "description": "Coordinate, linear, and area measure tool for Leaflet maps",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -66,7 +73,62 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
+  "directories": {},
+  "dist": {
+    "fileCount": 109,
+    "integrity": "sha512-ln5c9UNaWDEd24tIzDt9hwnpb8OaCPBfSWNBg2H8rb9SA3cbXW9+NqohA6/8TdsNDGJZr36woXMrqRq07Pcl3w==",
+    "shasum": "97777c206a1f8e1ee5a260ffb4128db18fce9cd0",
+    "tarball": "https://registry.npmjs.org/leaflet-measure/-/leaflet-measure-3.1.0.tgz",
+    "unpackedSize": 2713766
+  },
+  "gitHead": "756dff840e42a884e7a41bc512e5fd5be130f1ce",
+  "homepage": "https://github.com/ljagis/leaflet-measure#readme",
+  "keywords": [
+    "area",
+    "control",
+    "coordinate",
+    "leaflet",
+    "length",
+    "line",
+    "measure",
+    "measurement",
+    "path",
+    "polygon"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ],
+    "*.{js,scss}": [
+      "git add",
+      "prettier --write"
+    ]
+  },
+  "main": "dist/leaflet-measure.js",
+  "maintainers": [
+    {
+      "name": "brandoncopeland",
+      "email": "br@ndoncopeland.com"
+    }
+  ],
+  "name": "leaflet-measure",
+  "optionalDependencies": {},
   "peerDependencies": {
     "leaflet": "^1.0.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ljagis/leaflet-measure.git"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js -p",
+    "ghpages": "yarn build && gh-pages -d dist",
+    "lint": "eslint --ext js src/",
+    "precommit": "lint-staged",
+    "prepublishOnly": "yarn build",
+    "start:dev": "webpack-dev-server --open --config webpack.dev.js"
+  },
+  "version": "3.1.0"
 }

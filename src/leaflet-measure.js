@@ -1,11 +1,9 @@
 import '../scss/leaflet-measure.scss';
-
 import template from 'lodash/template';
 
 import units from './units';
 import calc from './calc';
-import * as dom from './dom';
-import { selectOne as $ } from './dom';
+import { selectOne as $} from './dom';
 import Symbology from './symbology';
 import { numberFormat } from './utils';
 
@@ -158,7 +156,7 @@ L.Control.Measure = L.Control.extend({
       .on('click', this._handleMeasureClick, this);
 
     this._map
-      .on('mousemove', this._handleMeasureMove, this)
+      .on('click', this._handleMeasureMove, this)
       .on('mouseout', this._handleMapMouseOut, this)
       .on('move', this._centerCaptureMarker, this)
       .on('resize', this._setCaptureMarkerIcon, this);
